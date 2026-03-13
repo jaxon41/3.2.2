@@ -11,7 +11,7 @@ posts, or quit the program.
 # This line of code tells the Python interpreter that it needs to 
 # reference the post.py file in order to run the rest of the code 
 # in this file.
-import Post
+import post
 
 # How will you save the posts you will create? Review the for loop 
 # near the end of this code for an answer.
