@@ -14,7 +14,7 @@ while user_input != "quit":
         new_post = Post(username, post_content)
         all_posts_archive.append(new_post)
     elif user_input == "remove":
-        try:
+        try: #A try/except loop is attempting the input, then if the input triggers one of the except it will redirect the code instead, this is to let the input allow errors and lightly break the code instead of failing.
             post_id_to_remove = int(input("Enter the post ID to remove: "))
             for post in all_posts_archive:
                 if post.get_post_id() == post_id_to_remove and post.get_user_name() == username:
